@@ -1,0 +1,49 @@
+.tab1__page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px 30px 20px;
+  background: $general-bg;
+}
+.menu {
+  width: 100vw;
+  height: 45px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: $menu-bg;
+  text-align: center;
+  font-size: 16px;
+  font-family: $slab-font;
+}
+.menu__link{
+  width: 120px;
+  padding: 10px;
+}
+.active {
+  color: $dark-text;
+  border-bottom: 2px solid $dark-text;
+}
+.tab1__tittle {
+  font-size: 24px;
+  font-weight: bold;
+  color: $dark-text;
+  display: flex;
+  flex-direction: row;
+}
+.tab1__section {
+  display: flex;
+
+}
+.tab1__section-option{
+  margin: 10px;
+  background: $menu-bg;
+  width: 225px;
+  height: 488px;
+  border: 1px solid $line-color;
+}
+.option-title{
+  font-size: 16px;
+  color: $regimen-text;
+}
