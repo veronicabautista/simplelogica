@@ -1,0 +1,11 @@
+@import 'core/variables';
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: $main-font;
+	list-style: none;
+}
