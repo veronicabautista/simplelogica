@@ -6,35 +6,23 @@
   padding: 0 20px 30px 20px;
   background: $general-bg;
 }
-.menu {
-  width: 100vw;
-  height: 45px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background: $menu-bg;
-  text-align: center;
-  font-size: 16px;
-  font-family: $slab-font;
-}
-.menu__link{
-  width: 120px;
-  padding: 10px;
-}
-.active {
-  color: $dark-text;
-  border-bottom: 2px solid $dark-text;
-}
-.tab1__tittle {
+.tab1__title {
   font-size: 24px;
-  font-weight: bold;
+  font-family: $secondary-font;
   color: $dark-text;
   display: flex;
   flex-direction: row;
+  padding: 43px;
+}
+.title-hotel{
+  margin-right: 5px;
+}
+.title-hotel-name{
+  font-weight: bold;
+  margin-right: 5px;
 }
 .tab1__section {
   display: flex;
-
 }
 .tab1__section-option{
   margin: 10px;
@@ -42,8 +30,43 @@
   width: 225px;
   height: 488px;
   border: 1px solid $line-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position:relative; 
 }
 .option-title{
   font-size: 16px;
+  color: $medium-text;
+  text-align: center;
+  max-width: 140px;
+  margin-top: 20px;
+}
+.option-title-line{
+  border: 0;
+  width: 70px;               
+  background-color: $line-color;
+  height: 1px;
+  position: absolute;
+  margin-top: 65px;
+}
+.option-content{
+  margin-top: 85px;
+  font-size: 15px;
   color: $regimen-text;
+  max-width: 183px;
+  padding-left: 5px;
+  position: absolute;
+}  
+.option-check{
+  background: $general-bg;
+  width: 190px;
+  height: 45px;
+  border: 1px solid $border-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $dark-text;
+  position: absolute; 
+  bottom: 30px;
 }

@@ -1,20 +1,4 @@
-.tab1__page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 0 20px 30px 20px;
-  background: #f9f9f9;
-}
+@charset "UTF-8";
 
 .menu {
   width: 100vw;
@@ -37,16 +21,35 @@
 .menu__link {
   width: 120px;
   padding: 10px;
+  color: #4ba7ee;
 }
 
-.active {
+.menu-active {
   color: #033970;
   border-bottom: 2px solid #033970;
 }
 
-.tab1__tittle {
+.tab1__page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 20px 30px 20px;
+  background: #f9f9f9;
+}
+
+.tab1__title {
   font-size: 24px;
-  font-weight: bold;
+  font-family: "Roboto Slab", sans-serif;
   color: #033970;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,6 +58,16 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  padding: 43px;
+}
+
+.title-hotel {
+  margin-right: 5px;
+}
+
+.title-hotel-name {
+  font-weight: bold;
+  margin-right: 5px;
 }
 
 .tab1__section {
@@ -68,26 +81,80 @@
   background: #fff;
   width: 225px;
   height: 488px;
-  border: 1px solid #326c96;
+  border: 1px solid #c9e3f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
 }
 
 .option-title {
   font-size: 16px;
+  color: #105aa3;
+  text-align: center;
+  max-width: 140px;
+  margin-top: 20px;
+}
+
+.option-title-line {
+  border: 0;
+  width: 70px;
+  background-color: #c9e3f9;
+  height: 1px;
+  position: absolute;
+  margin-top: 65px;
+}
+
+.option-content {
+  margin-top: 85px;
+  font-size: 15px;
   color: #001841;
+  max-width: 183px;
+  padding-left: 5px;
+  position: absolute;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+.option-check {
+  background: #f9f9f9;
+  width: 190px;
+  height: 45px;
+  border: 1px solid #326c96;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #033970;
+  position: absolute;
+  bottom: 30px;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  height: 100vh;
+.checkbox {
+  display: none;
 }
 
-a:link,a:active,a:hover,a:visited {
-  text-decoration: none;
-}
+.check-container {
+  position: relative;
+  padding-left: 25px;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 5px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}/* Hide the browser's default radio button */.check-container input {position: absolute;opacity: 0;cursor: pointer;}/* Create a custom radio button */.checkmark {position: absolute;top: 0;left: 0;height: 16px;width: 16px;background-color: #fff;border-radius: 50%;border: 1px solid #9da2a9;}/* On mouse-over, add a grey background color */.check-container:hover input ~ .checkmark {background-color: #ccc;}/* When the radio button is checked, add a blue background */.check-container input:checked ~ .checkmark {background-color: white;border: 1px solid #6dc138;}/* Create the indicator (the dot/circle - hidden when not checked) */.checkmark:after {content: "";position: absolute;display: none;}/* Show the indicator (dot/circle) when checked */.check-container input:checked ~ .checkmark:after {display: block;}/* Style the indicator (dot/circle) */.check-container .checkmark:after {top: 3px;left: 3px;width: 10px;height: 10px;border-radius: 50%;background: #6dc138;}* {margin: 0;padding: 0;}body {font-family: "Roboto", sans-serif;height: 100vh;}a:link,a:active,a:hover,a:visited {text-decoration: none;}ul {list-style: none;}li::before {content: "•";color: gray;display: inline-block;width: 1em;margin-left: -1em;}
 
 /*# sourceMappingURL=main.css.map */

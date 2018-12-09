@@ -1,0 +1,21 @@
+
+.menu {
+  width: 100vw;
+  height: 45px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: $menu-bg;
+  text-align: center;
+  font-size: 16px;
+  font-family: $secondary-font;
+}
+.menu__link{
+  width: 120px;
+  padding: 10px;
+  color: $light-text;
+}
+.menu-active {
+  color: $dark-text;
+  border-bottom: 2px solid $dark-text;
+}
