@@ -12,7 +12,7 @@
   color: $dark-text;
   display: flex;
   flex-direction: row;
-  padding: 43px;
+  padding: 40px;
 }
 .title-hotel{
   margin-right: 5px;
@@ -25,11 +25,22 @@
   display: flex;
 }
 .tab1__section-option{
-  margin: 10px;
+  margin: 0px 4px 0 4px;
   background: $menu-bg;
   width: 225px;
   height: 488px;
   border: 1px solid $line-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position:relative; 
+}
+.checked{
+  margin: 10px;
+  background: $menu-bg;
+  width: 225px;
+  height: 488px;
+  border: 1px solid $border-color;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,22 +62,34 @@
   margin-top: 65px;
 }
 .option-content{
-  margin-top: 85px;
+  margin-top: 83px;
   font-size: 15px;
   color: $regimen-text;
   max-width: 183px;
-  padding-left: 5px;
+  padding-left: 9px;
   position: absolute;
+  line-height: 25px;
 }  
 .option-check{
   background: $general-bg;
+  width: 196px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $list-point;
+  position: absolute; 
+  bottom: 17px;
+}
+.option-checked{
+  background: $general-bg;
   width: 190px;
   height: 45px;
-  border: 1px solid $border-color;
   display: flex;
   justify-content: center;
   align-items: center;
   color: $dark-text;
   position: absolute; 
   bottom: 30px;
+  border: 1px solid $border-color;
 }

@@ -3,10 +3,10 @@
   display: none;
 }
 .check-container {
+  display: block;
   position: relative;
   padding-left: 25px;
   font-size: 16px;
-  line-height: 20px;
   margin: 5px;
   cursor: pointer;
   -webkit-user-select: none;
@@ -38,7 +38,7 @@
   background-color: #ccc;
 }
 
-/* When the radio button is checked, add a blue background */
+/* When the radio button is checked, add a green background */
 .check-container input:checked ~ .checkmark {
   background-color: white;
   border: 1px solid $checked;

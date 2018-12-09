@@ -9,7 +9,7 @@
 }
 body {
 	font-family: $main-font;
-	height: 100vh;
+	background: $general-bg;
 }
 a:link, a:active, a:hover, a:visited {
 	text-decoration: none;
