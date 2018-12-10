@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 .menu {
-  width: 100vw;
+  width: 1200px;
+  min-width: 769px;
   height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,15 +13,18 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-right: 30px;
   background: #fff;
   text-align: center;
   font-size: 16px;
   font-family: "Roboto Slab", sans-serif;
+  -webkit-box-shadow: 0px 1px 2px 0px #505c77;
+  box-shadow: 0px 1px 2px 0px #505c77;
 }
 
 .menu__link {
   width: 120px;
-  padding: 10px;
+  padding: 11px;
   color: #4ba7ee;
 }
 
@@ -29,7 +33,7 @@
   border-bottom: 2px solid #033970;
 }
 
-.tab1__page {
+.main__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,10 +58,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 40px;
 }
 
@@ -176,6 +179,146 @@
   position: absolute;
   bottom: 30px;
   border: 1px solid #326c96;
+}
+
+.tab2__container {
+  width: 1200px;
+  min-width: 769px;
+  height: 765px;
+  margin-top: 86px;
+  margin-bottom: 30px;
+  padding: 32px 20px 20px 20px;
+  background: #fff;
+  border: 1px solid #dee1e8;
+}
+
+.tab2__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.tab2__align-top {
+  vertical-align: top;
+}
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.tab2__section-title {
+  color: #4ba7ee;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 38px;
+  margin: 0px 15px 0px 20px;
+}
+
+.tab2__section-comment {
+  color: #105aa3;
+  font-size: 12px;
+}
+
+.tab2__option {
+  border: 1px solid #dee1e8;
+  margin-top: 30px;
+  background: #fff;
+}
+
+.tab2__option-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: 197px;
+}
+
+.tab2__option-text {
+  margin: 15px 0px 15px 24px;
+  max-width: 603px;
+  position: relative;
+}
+
+.tab2__option-title {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #033970;
+}
+
+.tab2__option-definition {
+  font-size: 14px;
+  color: #616469;
+  margin-top: 3px;
+}
+
+.tab2__option-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+}
+
+.tab2__option-show {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #48a8f1;
+}
+
+.arrow-small {
+  width: 10px;
+  margin-left: 20px;
+}
+
+.open {
+  height: 440px;
+}
+
+.tab2__option-includes {
+  max-height: 190px;
+  color: #616469;
+  padding-left: 80px;
+}
+
+.includes-title {
+  font-size: 16px;
+}
+
+.includes-list {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.list-column {
+  height: 119px;
+  padding-right: 22px;
+}
+
+.includes-element {
+  width: 282px;
+}
+
+.includes-extra {
+  font-size: 14px;
+  font-weight: bold;
+  color: #033970;
 }
 
 .checkbox {

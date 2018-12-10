@@ -1,0 +1,101 @@
+.tab2__container{
+  width: 1200px;
+  min-width: 769px;
+  height: 765px;
+  margin-top: 86px;
+  margin-bottom: 30px;
+  padding: 32px 20px 20px 20px;
+  background: $menu-bg;
+  border: 1px solid $line-color2;
+}
+.tab2__section{
+  display: flex;
+  align-items: flex-end;
+}
+.tab2__align-top{
+  vertical-align: top;
+}
+.rotate{
+  transform: rotate(180deg);
+}
+.tab2__section-title{
+  color: $light-text;
+  font-family: $secondary-font;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 38px;
+  margin: 0px 15px 0px 20px;
+}
+.tab2__section-comment{
+  color: $medium-text;
+  font-size: 12px;
+}
+.tab2__option{
+  border: 1px solid $line-color2;
+  margin-top: 30px;
+}
+.tab2__option-info{
+  display: flex;
+  flex-direction: row;
+  height: 197px;
+}
+.tab2__option-text{
+  margin: 15px 0px 15px 24px;
+  max-width: 603px;
+  position: relative;
+}
+.tab2__option-title{
+  font-family: $secondary-font;
+  font-size: 18px;
+  font-weight: bold;
+  color: $dark-text;
+}
+.tab2__option-definition{
+  font-size: 14px;
+  color: $options-text;
+  margin-top: 3px;
+}
+.tab2__option-more{
+  display: flex;
+  position: absolute;
+}
+.tab2__option-show{
+  font-family: $secondary-font;
+  font-size: 14px;
+  font-weight: bold;
+  color: $more-text;
+}
+.arrow-small{
+  width: 10px;
+  margin-left: 20px;
+}
+.open{
+  height: 440px;
+}
+.tab2__option-includes{
+  max-height: 190px;
+  color: $options-text;
+  padding-left: 80px;
+}
+.includes-title{
+  font-size: 16px;
+}
+.includes-list{
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.list-column{
+  height: 119px;
+  padding-right: 22px;
+}
+.includes-element{
+  width: 282px;
+}
+.includes-extra{
+  font-size: 14px;
+  font-weight: bold;
+  color: $dark-text;
+}
