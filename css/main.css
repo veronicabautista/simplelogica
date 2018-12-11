@@ -28,7 +28,7 @@
   color: #4ba7ee;
 }
 
-.menu-active {
+a.menu__link:active,a.menu__link:hover {
   color: #033970;
   border-bottom: 2px solid #033970;
 }
@@ -184,12 +184,12 @@
 .tab2__container {
   width: 1200px;
   min-width: 769px;
-  height: 765px;
-  margin-top: 86px;
-  margin-bottom: 30px;
-  padding: 32px 20px 20px 20px;
+  height: auto;
+  margin-top: 42px;
+  padding: 32px 20px 20px 22px;
   background: #fff;
   border: 1px solid #dee1e8;
+  position: relative;
 }
 
 .tab2__section {
@@ -199,10 +199,21 @@
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  background: #fff;
+  width: 1200px;
+  min-width: 769px;
+  padding-left: 10px;
+  position: relative;
 }
 
 .tab2__align-top {
-  vertical-align: top;
+  position: absolute;
+  top: 35%;
+}
+
+.tab2__align-bottom {
+  position: absolute;
+  bottom: 20%;
 }
 
 .rotate {
@@ -216,7 +227,7 @@
   font-size: 24px;
   font-weight: bold;
   line-height: 38px;
-  margin: 0px 15px 0px 20px;
+  margin: 0px 15px 0px 30px;
 }
 
 .tab2__section-comment {
@@ -225,9 +236,8 @@
 }
 
 .tab2__option {
-  border: 1px solid #dee1e8;
   margin-top: 30px;
-  background: #fff;
+  border: 1px solid #dee1e8;
 }
 
 .tab2__option-info {
@@ -238,13 +248,17 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  height: 197px;
+}
+
+.tab2__image {
+  height: 180px;
 }
 
 .tab2__option-text {
-  margin: 15px 0px 15px 24px;
+  margin: 15px 0px 13px 24px;
   max-width: 603px;
   position: relative;
+  height: auto;
 }
 
 .tab2__option-title {
@@ -265,6 +279,7 @@
   display: -ms-flexbox;
   display: flex;
   position: absolute;
+  bottom: 0px;
 }
 
 .tab2__option-show {
@@ -272,6 +287,7 @@
   font-size: 14px;
   font-weight: bold;
   color: #48a8f1;
+  padding-top: 10px;
 }
 
 .arrow-small {
@@ -279,14 +295,10 @@
   margin-left: 20px;
 }
 
-.open {
-  height: 440px;
-}
-
 .tab2__option-includes {
   max-height: 190px;
   color: #616469;
-  padding-left: 80px;
+  padding: 18px 0px 0px 80px;
 }
 
 .includes-title {
@@ -319,6 +331,7 @@
   font-size: 14px;
   font-weight: bold;
   color: #033970;
+  padding-bottom: 16px;
 }
 
 .checkbox {
@@ -336,6 +349,6 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}/* Hide the browser's default radio button */.check-container input {position: absolute;opacity: 0;cursor: pointer;}/* Create a custom radio button */.checkmark {position: absolute;top: 0;left: 0;height: 16px;width: 16px;background-color: #fff;border-radius: 50%;border: 1px solid #9da2a9;}/* On mouse-over, add a grey background color */.check-container:hover input ~ .checkmark {background-color: #ccc;}/* When the radio button is checked, add a green background */.check-container input:checked ~ .checkmark {background-color: white;border: 1px solid #6dc138;}/* Create the indicator (the dot/circle - hidden when not checked) */.checkmark:after {content: "";position: absolute;display: none;}/* Show the indicator (dot/circle) when checked */.check-container input:checked ~ .checkmark:after {display: block;}/* Style the indicator (dot/circle) */.check-container .checkmark:after {top: 3px;left: 3px;width: 10px;height: 10px;border-radius: 50%;background: #6dc138;}* {margin: 0;padding: 0;}body {font-family: "Roboto", sans-serif;background: #f9f9f9;}a:link,a:active,a:hover,a:visited {text-decoration: none;}ul {list-style: none;}li::before {content: "•";color: gray;display: inline-block;width: 1em;margin-left: -1em;}
+}/* Hide the browser's default radio button */.check-container input {position: absolute;opacity: 0;cursor: pointer;}/* Create a custom radio button */.checkmark {position: absolute;top: 0;left: 0;height: 16px;width: 16px;background-color: #fff;border-radius: 50%;border: 1px solid #9da2a9;}/* On mouse-over, add a grey background color */.check-container:hover input ~ .checkmark {background-color: #ccc;}/* When the radio button is checked, add a green background */.check-container input:checked ~ .checkmark {background-color: white;border: 1px solid #6dc138;}/* Create the indicator (the dot/circle - hidden when not checked) */.checkmark:after {content: "";position: absolute;display: none;}/* Show the indicator (dot/circle) when checked */.check-container input:checked ~ .checkmark:after {display: block;}/* Style the indicator (dot/circle) */.check-container .checkmark:after {top: 3px;left: 3px;width: 10px;height: 10px;border-radius: 50%;background: #6dc138;}.exclusive {background: #e82e34;color: #fff;font-size: 12px;text-transform: uppercase;letter-spacing: 0.1em;width: 221px;height: 25px;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;position: absolute;top: 0;right: 0;}* {margin: 0;padding: 0;}body {font-family: "Roboto", sans-serif;background: #f9f9f9;}a:link,a:active,a:hover,a:visited {text-decoration: none;}ul {list-style: none;}li::before {content: "•";color: gray;display: inline-block;width: 1em;margin-left: -1em;}
 
 /*# sourceMappingURL=main.css.map */

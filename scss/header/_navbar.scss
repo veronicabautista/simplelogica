@@ -18,7 +18,7 @@
   padding: 11px;
   color: $light-text;
 }
-.menu-active {
+a.menu__link:active, a.menu__link:hover {
   color: $dark-text;
   border-bottom: 2px solid $dark-text;
 }

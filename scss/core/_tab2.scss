@@ -1,20 +1,31 @@
 .tab2__container{
   width: 1200px;
   min-width: 769px;
-  height: 765px;
-  margin-top: 86px;
-  margin-bottom: 30px;
-  padding: 32px 20px 20px 20px;
+  height: auto;
+  margin-top: 42px;
+  padding: 32px 20px 20px 22px;
   background: $menu-bg;
   border: 1px solid $line-color2;
+  position: relative;
 }
 .tab2__section{
   display: flex;
   align-items: flex-end;
+  background: $menu-bg;
+  width: 1200px;
+  min-width: 769px;
+  padding-left: 10px;
+  position: relative;
 }
 .tab2__align-top{
-  vertical-align: top;
+  position: absolute;
+  top: 35%;
 }
+.tab2__align-bottom{
+  position: absolute;
+  bottom: 20%;
+}
+
 .rotate{
   transform: rotate(180deg);
 }
@@ -24,25 +35,28 @@
   font-size: 24px;
   font-weight: bold;
   line-height: 38px;
-  margin: 0px 15px 0px 20px;
+  margin: 0px 15px 0px 30px;
 }
 .tab2__section-comment{
   color: $medium-text;
   font-size: 12px;
 }
 .tab2__option{
-  border: 1px solid $line-color2;
   margin-top: 30px;
+  border: 1px solid $line-color2;
 }
 .tab2__option-info{
   display: flex;
   flex-direction: row;
-  height: 197px;
+}
+.tab2__image{
+  height: 180px;
 }
 .tab2__option-text{
-  margin: 15px 0px 15px 24px;
+  margin: 15px 0px 13px 24px;
   max-width: 603px;
   position: relative;
+  height: auto;
 }
 .tab2__option-title{
   font-family: $secondary-font;
@@ -58,24 +72,24 @@
 .tab2__option-more{
   display: flex;
   position: absolute;
+  bottom: 0px;
 }
 .tab2__option-show{
   font-family: $secondary-font;
   font-size: 14px;
   font-weight: bold;
   color: $more-text;
+  padding-top: 10px;
 }
 .arrow-small{
   width: 10px;
   margin-left: 20px;
 }
-.open{
-  height: 440px;
-}
+
 .tab2__option-includes{
   max-height: 190px;
   color: $options-text;
-  padding-left: 80px;
+  padding: 18px 0px 0px 80px;
 }
 .includes-title{
   font-size: 16px;
@@ -98,4 +112,5 @@
   font-size: 14px;
   font-weight: bold;
   color: $dark-text;
+  padding-bottom: 16px;
 }
