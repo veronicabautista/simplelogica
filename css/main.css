@@ -181,6 +181,10 @@ a.menu__link:active,a.menu__link:hover {
   border: 1px solid #326c96;
 }
 
+.hide {
+  display: none;
+}
+
 .tab2__container {
   width: 1200px;
   min-width: 769px;
