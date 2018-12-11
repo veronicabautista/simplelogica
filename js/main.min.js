@@ -1,5 +1,11 @@
 'use strict';
 
+// -- Nav -- //
+var header = document.getElementById('navbar');
+var menuLink = header.getElementsByClassName('menu__link');
+
+
+// -- Tab 2 --//
 var arrowBtn = document.querySelector('.arrow');
 var arrowSmall = document.querySelector('.arrow-two');
 var selectorEstancia = document.querySelector('.estancia-title');
@@ -8,6 +14,29 @@ var servicios = document.querySelector('.servicios');
 var selectorInfo = document.querySelector('.more-two');
 var moreIncludes = document.querySelector('.tab2__option-includes');
 
+var Checked = null;
+//The class name can vary
+for (let CheckBox of document.getElementsByClassName('choose')){
+	CheckBox.onclick = function(){
+  	if(Checked!=null){
+      Checked.checked = false;
+      Checked = CheckBox;
+    }
+    Checked = CheckBox;
+  }
+}
+
+
+//-- Nav -- //
+for (var i = 0; i < menuLink.length; i++) {
+  menuLink[i].addEventListener('click', function () {
+    var current = document.getElementsByClassName('active');
+    current[0].className = current[0].className.replace(' active', '');
+    this.className += ' active';
+  });
+}
+
+// -- Tab 2 --//
 function deployFirst() {
   if (contentEstancia.classList.contains('hide')) {
     contentEstancia.classList.remove('hide');
@@ -28,7 +57,6 @@ function deployInfo() {
     arrowSmall.classList.remove('rotate');
   }
 }
-
 
 selectorEstancia.addEventListener('click', deployFirst);
 selectorInfo.addEventListener('click', deployInfo);

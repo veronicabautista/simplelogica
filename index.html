@@ -18,13 +18,18 @@
 
   <!--CSS-->
   <link rel="stylesheet" href="/css/main.css">
+
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://www.bitstorm.org/jquery/color-animation/jquery.animate-colors-min.js"></script>
 </head>
 <body>
   <div class="main__container">
-    <div class="row">
+    <div id="navbar">
       <nav class="menu">
-        <a href="#tab1" class="menu__link">Tab 1</a>
-        <a href="#tab2" class="menu__link">Tab 2</a>
+        <a href="#tab1" class="menu__link tab1 active">Tab 1</a>
+        <a href="#tab2" class="menu__link tab2">Tab 2</a>
       </nav>
     </div>
     <div id="tab1" class="tab1__container">
@@ -46,7 +51,7 @@
             <li>Botella de agua de bienvenida</li>
           </ul>
           <div class="option-check">
-            <label class="check-container" for="check1">Elegir régimen
+            <label class="check-container" for="check1" name="choose">Elegir régimen
               <input type="radio" class="checkbox" id="check1" checked="checked">
               <span class="checkmark"></span>
             </label>
@@ -59,7 +64,7 @@
             <li>Desayuno buffet completo</li>
           </ul>
           <div class="option-check">
-            <label class="check-container" for="check2">Elegir régimen
+            <label class="check-container" for="check2" name="choose">Elegir régimen
               <input type="radio" class="checkbox" id="check2">
               <span class="checkmark"></span>
             </label>
@@ -74,7 +79,7 @@
             <li>No incluye</li>
           </ul>
           <div class="option-check">
-            <label class="check-container" for="check3">Elegir régimen
+            <label class="check-container" for="check3" name="choose">Elegir régimen
               <input type="radio" class="checkbox" id="check3">
               <span class="checkmark"></span>
             </label>
@@ -90,7 +95,7 @@
             <li class="option-list">Servicio de bares (marcas nacionales)</li>
           </ul>
           <div class="option-check">
-            <label class="check-container" for="check4">Elegir régimen
+            <label class="check-container" for="check4" name="choose">Elegir régimen
               <input type="radio" class="checkbox" id="check4">
               <span class="checkmark"></span>
             </label>
@@ -110,7 +115,7 @@
             <li class="option-list">Lavandería</li>
           </ul>
           <div class="option-check">
-            <label class="check-container" for="check5">Elegir régimen
+            <label class="check-container" for="check5" name="choose">Elegir régimen
               <input type="radio" class="checkbox" id="check5">
               <span class="checkmark"></span>
             </label>
@@ -118,8 +123,9 @@
         </section>
       </div>
     </div>
-    <!-- Tab 2 First-->
+    <!-- Tab 2 -->
     <div id="tab2" class="tab2__container">
+      <div class="tab2__options-menu">
       <div class="exclusive">exclusivo hoteles.com</div>
       <div class="tab2__section estancia-title">
         <div class="tab2__align-top">
@@ -146,7 +152,6 @@
           </div>
         </div>
       </div>
-    <!-- Tab 2 Second -->
       <div class="tab2__option">
         <div class="tab2__option-info">
           <div class="tab2__image">
@@ -182,18 +187,19 @@
           </div>
         </div>
       </div>
-    </div>  
-    <!-- Third -->
-    <div class="tab2__container">
-      <div class="exclusive">exclusivo hoteles.com</div>
-      <div class="tab2__section servicios">
-        <div class="tab2__align-bottom">
-          <img class="" src="img/angle-down-blue.svg">
-        </div>
-        <h1 class="tab2__section-title">Servicios de habitación</h1>
-        <h6 class="tab2__section-comment">Opcional</h6>
-      </div>
     </div>
+    <!-- Third -->
+    <div class="tab2__options-menu">
+        <div class="exclusive">exclusivo hoteles.com</div>
+        <div class="tab2__section servicios">
+          <div class="tab2__align-bottom">
+            <img class="" src="img/angle-down-blue.svg">
+          </div>
+          <h1 class="tab2__section-title">Servicios de habitación</h1>
+          <h6 class="tab2__section-comment">Opcional</h6>
+        </div>
+      </div>
+  </div> 
 <script src="/js/main.min.js"></script>
 </body>
 </html>

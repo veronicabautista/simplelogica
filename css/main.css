@@ -20,6 +20,12 @@
   font-family: "Roboto Slab", sans-serif;
   -webkit-box-shadow: 0px 1px 2px 0px #505c77;
   box-shadow: 0px 1px 2px 0px #505c77;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  z-index: 2;
 }
 
 .menu__link {
@@ -28,12 +34,15 @@
   color: #4ba7ee;
 }
 
-a.menu__link:active,a.menu__link:hover {
+.active,a.menu__link:hover {
   color: #033970;
   border-bottom: 2px solid #033970;
 }
 
 .main__container {
+  width: 1300px;
+  min-width: 769px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,6 +58,12 @@ a.menu__link:active,a.menu__link:hover {
   align-items: center;
   padding: 0 20px 30px 20px;
   background: #f9f9f9;
+  margin: auto;
+}
+
+.tab1__container {
+  height: 100vh;
+  margin-top: 45px;
 }
 
 .tab1__title {
@@ -186,6 +201,11 @@ a.menu__link:active,a.menu__link:hover {
 }
 
 .tab2__container {
+  height: 100vh;
+  margin-top: 45px;
+}
+
+.tab2__options-menu {
   width: 1200px;
   min-width: 769px;
   height: auto;
@@ -338,10 +358,6 @@ a.menu__link:active,a.menu__link:hover {
   padding-bottom: 16px;
 }
 
-.checkbox {
-  display: none;
-}
-
 .check-container {
   display: block;
   position: relative;
@@ -353,6 +369,6 @@ a.menu__link:active,a.menu__link:hover {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}/* Hide the browser's default radio button */.check-container input {position: absolute;opacity: 0;cursor: pointer;}/* Create a custom radio button */.checkmark {position: absolute;top: 0;left: 0;height: 16px;width: 16px;background-color: #fff;border-radius: 50%;border: 1px solid #9da2a9;}/* On mouse-over, add a grey background color */.check-container:hover input ~ .checkmark {background-color: #ccc;}/* When the radio button is checked, add a green background */.check-container input:checked ~ .checkmark {background-color: white;border: 1px solid #6dc138;}/* Create the indicator (the dot/circle - hidden when not checked) */.checkmark:after {content: "";position: absolute;display: none;}/* Show the indicator (dot/circle) when checked */.check-container input:checked ~ .checkmark:after {display: block;}/* Style the indicator (dot/circle) */.check-container .checkmark:after {top: 3px;left: 3px;width: 10px;height: 10px;border-radius: 50%;background: #6dc138;}.exclusive {background: #e82e34;color: #fff;font-size: 12px;text-transform: uppercase;letter-spacing: 0.1em;width: 221px;height: 25px;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;position: absolute;top: 0;right: 0;}* {margin: 0;padding: 0;}body {font-family: "Roboto", sans-serif;background: #f9f9f9;}a:link,a:active,a:hover,a:visited {text-decoration: none;}ul {list-style: none;}li::before {content: "•";color: gray;display: inline-block;width: 1em;margin-left: -1em;}
+}/* Hide the browser's default radio button */.check-container input {position: absolute;opacity: 0;cursor: pointer;}/* Create a custom radio button */.checkmark {position: absolute;top: 0;left: 0;height: 16px;width: 16px;background-color: #fff;border-radius: 50%;border: 1px solid #9da2a9;}/* On mouse-over, add a grey background color */.check-container:hover input:checked ~ .checkmark {background-color: #ccc;}/* When the radio button is checked, add a green background */.check-container input:checked ~ .checkmark {background-color: white;border: 1px solid #6dc138;}/* Create the indicator (the dot/circle - hidden when not checked) */.checkmark:after {content: "";position: absolute;display: none;}/* Show the indicator (dot/circle) when checked */.check-container input:checked ~ .checkmark:after {display: block;}/* Style the indicator (dot/circle) */.check-container .checkmark:after {top: 3px;left: 3px;width: 10px;height: 10px;border-radius: 50%;background: #6dc138;}.exclusive {background: #e82e34;color: #fff;font-size: 12px;text-transform: uppercase;letter-spacing: 0.1em;width: 221px;height: 25px;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;position: absolute;top: 0;right: 0;}* {margin: 0;padding: 0;}body {font-family: "Roboto", sans-serif;background: #f9f9f9;}a:link,a:active,a:hover,a:visited {text-decoration: none;}ul {list-style: none;}li::before {content: "•";color: gray;display: inline-block;width: 1em;margin-left: -1em;}
 
 /*# sourceMappingURL=main.css.map */

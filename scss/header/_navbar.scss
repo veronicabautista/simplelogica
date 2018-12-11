@@ -12,13 +12,19 @@
   font-size: 16px;
   font-family: $secondary-font;
   box-shadow: 0px 1px 2px 0px $menu-shadow;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  z-index: 2;
 }
 .menu__link{
   width: 120px;
   padding: 11px;
   color: $light-text;
 }
-a.menu__link:active, a.menu__link:hover {
+.active, a.menu__link:hover {
   color: $dark-text;
   border-bottom: 2px solid $dark-text;
 }

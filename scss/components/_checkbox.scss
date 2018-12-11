@@ -1,7 +1,3 @@
-
-.checkbox {
-  display: none;
-}
 .check-container {
   display: block;
   position: relative;
@@ -34,7 +30,7 @@
 }
 
 /* On mouse-over, add a grey background color */
-.check-container:hover input ~ .checkmark {
+.check-container:hover input:checked ~ .checkmark {
   background-color: #ccc;
 }
 
