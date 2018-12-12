@@ -4,10 +4,16 @@
 .tab2__container{
   height: 100vh;
   margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  @media all and (max-width:768px) {
+    min-width: 320px;
+    padding: 0;
+  }
 }
 
 .tab2__options-menu{
-  width: 1200px;
+  width: 1190px;
   min-width: 769px;
   height: auto;
   margin-top: 42px;
@@ -15,15 +21,26 @@
   background: $menu-bg;
   border: 1px solid $line-color2;
   position: relative;
+  @media all and (max-width:768px) {
+    max-width: 500px;
+    min-width: 320px;
+  }
+  @media all and (max-width:520px) {
+    width: 300px;
+  }
 }
 .tab2__section{
   display: flex;
   align-items: flex-end;
   background: $menu-bg;
-  width: 1200px;
   min-width: 769px;
-  padding-left: 10px;
+  padding-left: 5px;
   position: relative;
+  @media all and (max-width:768px) {
+    max-width: 500px;
+    min-width: 320px;
+  }
+  
 }
 .tab2__align-top{
   position: absolute;
@@ -52,10 +69,17 @@
 .tab2__option{
   margin-top: 30px;
   border: 1px solid $line-color2;
+  height: auto;
 }
 .tab2__option-info{
   display: flex;
   flex-direction: row;
+  height: auto;
+  @media all and (max-width:768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .tab2__image{
   height: 180px;
@@ -81,6 +105,9 @@
   display: flex;
   position: absolute;
   bottom: 0px;
+  @media all and (max-width:768px) {
+    position: relative;
+  }
 }
 .tab2__option-show{
   font-family: $secondary-font;
@@ -95,9 +122,13 @@
 }
 
 .tab2__option-includes{
-  max-height: 190px;
+  height: 190px;
   color: $options-text;
   padding: 18px 0px 0px 80px;
+  @media all and (max-width:768px) {
+    height: auto;
+    padding-left: 20px;
+  }
 }
 .includes-title{
   font-size: 16px;
@@ -108,17 +139,29 @@
   flex-direction: row;
   padding-top: 10px;
   padding-left: 20px;
+  @media all and (max-width:768px) {
+    flex-direction: column;
+  }
 }
 .list-column{
   height: 119px;
   padding-right: 22px;
+  @media all and (max-width:768px) {
+    height: auto;
+  }
 }
 .includes-element{
   width: 282px;
+  @media all and (max-width:768px) {
+    width: auto;
+  }
 }
 .includes-extra{
   font-size: 14px;
   font-weight: bold;
   color: $dark-text;
   padding-bottom: 16px;
+  @media all and (max-width:768px) {
+    margin-top: 10px;
+  }
 }

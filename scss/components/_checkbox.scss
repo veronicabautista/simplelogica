@@ -10,6 +10,8 @@
   -ms-user-select: none;
   user-select: none;
 }
+
+
 /* Hide the browser's default radio button */
 .check-container input {
   position: absolute;
@@ -30,7 +32,7 @@
 }
 
 /* On mouse-over, add a grey background color */
-.check-container:hover input:checked ~ .checkmark {
+.check-container:hover input ~ .checkmark {
   background-color: #ccc;
 }
 

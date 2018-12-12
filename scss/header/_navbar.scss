@@ -18,6 +18,10 @@
   right: 0px;
   margin: auto;
   z-index: 2;
+  @media all and (max-width:768px) {
+    width: 100vw;
+    min-width: 320px;
+  }
 }
 .menu__link{
   width: 120px;

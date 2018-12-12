@@ -1,8 +1,12 @@
 .tab1__container{
   height: 100vh; 
   margin-top: 45px;
+  @media all and (max-width:768px) {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
 }
-
 
 .tab1__title {
   font-size: 24px;
@@ -11,6 +15,10 @@
   display: flex;
   justify-content: center;
   padding: 40px;
+  @media all and (max-width:768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .title-hotel{
   margin-right: 5px;
@@ -21,6 +29,11 @@
 }
 .tab1__section {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  @media all and (max-width:768px) {
+    flex-direction: column;
+  }
 }
 .tab1__section-option{
   margin: 0px 4px 0 4px;
@@ -32,7 +45,20 @@
   flex-direction: column;
   align-items: center;
   position:relative; 
+  @media all and (max-width:768px) {
+    margin-bottom: 10px;
+    width: 500px;
+  }
+  @media all and (max-width:520px) {
+    margin-bottom: 10px;
+    width: 300px;
+  }
 }
+.tab1__section-option:focus-within{
+  border: 1px solid $border-color;
+}
+
+
 .checked{
   margin: 10px;
   background: $menu-bg;
@@ -79,15 +105,8 @@
   position: absolute; 
   bottom: 17px;
 }
-.option-checked{
-  background: $general-bg;
-  width: 190px;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: $dark-text;
-  position: absolute; 
-  bottom: 30px;
+.option-check:focus-within{
   border: 1px solid $border-color;
+  color: $dark-text;
 }
+

@@ -4,7 +4,6 @@
 var header = document.getElementById('navbar');
 var menuLink = header.getElementsByClassName('menu__link');
 
-
 // -- Tab 2 --//
 var arrowBtn = document.querySelector('.arrow');
 var arrowSmall = document.querySelector('.arrow-two');
@@ -13,19 +12,6 @@ var contentEstancia = document.querySelector('.estancia-content');
 var servicios = document.querySelector('.servicios');
 var selectorInfo = document.querySelector('.more-two');
 var moreIncludes = document.querySelector('.tab2__option-includes');
-
-var Checked = null;
-//The class name can vary
-for (let CheckBox of document.getElementsByClassName('choose')){
-	CheckBox.onclick = function(){
-  	if(Checked!=null){
-      Checked.checked = false;
-      Checked = CheckBox;
-    }
-    Checked = CheckBox;
-  }
-}
-
 
 //-- Nav -- //
 for (var i = 0; i < menuLink.length; i++) {

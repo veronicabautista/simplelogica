@@ -40,7 +40,6 @@
 }
 
 .main__container {
-  width: 1300px;
   min-width: 769px;
   height: auto;
   display: -webkit-box;
@@ -56,7 +55,6 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0 20px 30px 20px;
   background: #f9f9f9;
   margin: auto;
 }
@@ -92,6 +90,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .tab1__section-option {
@@ -111,6 +115,10 @@
   -ms-flex-align: center;
   align-items: center;
   position: relative;
+}
+
+.tab1__section-option:focus-within {
+  border: 1px solid #326c96;
 }
 
 .checked {
@@ -177,23 +185,9 @@
   bottom: 17px;
 }
 
-.option-checked {
-  background: #f9f9f9;
-  width: 190px;
-  height: 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #033970;
-  position: absolute;
-  bottom: 30px;
+.option-check:focus-within {
   border: 1px solid #326c96;
+  color: #033970;
 }
 
 .hide {
@@ -203,10 +197,17 @@
 .tab2__container {
   height: 100vh;
   margin-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .tab2__options-menu {
-  width: 1200px;
+  width: 1190px;
   min-width: 769px;
   height: auto;
   margin-top: 42px;
@@ -224,9 +225,8 @@
   -ms-flex-align: end;
   align-items: flex-end;
   background: #fff;
-  width: 1200px;
   min-width: 769px;
-  padding-left: 10px;
+  padding-left: 5px;
   position: relative;
 }
 
@@ -262,6 +262,7 @@
 .tab2__option {
   margin-top: 30px;
   border: 1px solid #dee1e8;
+  height: auto;
 }
 
 .tab2__option-info {
@@ -272,6 +273,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  height: auto;
 }
 
 .tab2__image {
@@ -320,7 +322,7 @@
 }
 
 .tab2__option-includes {
-  max-height: 190px;
+  height: 190px;
   color: #616469;
   padding: 18px 0px 0px 80px;
 }
@@ -369,6 +371,6 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}/* Hide the browser's default radio button */.check-container input {position: absolute;opacity: 0;cursor: pointer;}/* Create a custom radio button */.checkmark {position: absolute;top: 0;left: 0;height: 16px;width: 16px;background-color: #fff;border-radius: 50%;border: 1px solid #9da2a9;}/* On mouse-over, add a grey background color */.check-container:hover input:checked ~ .checkmark {background-color: #ccc;}/* When the radio button is checked, add a green background */.check-container input:checked ~ .checkmark {background-color: white;border: 1px solid #6dc138;}/* Create the indicator (the dot/circle - hidden when not checked) */.checkmark:after {content: "";position: absolute;display: none;}/* Show the indicator (dot/circle) when checked */.check-container input:checked ~ .checkmark:after {display: block;}/* Style the indicator (dot/circle) */.check-container .checkmark:after {top: 3px;left: 3px;width: 10px;height: 10px;border-radius: 50%;background: #6dc138;}.exclusive {background: #e82e34;color: #fff;font-size: 12px;text-transform: uppercase;letter-spacing: 0.1em;width: 221px;height: 25px;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;position: absolute;top: 0;right: 0;}* {margin: 0;padding: 0;}body {font-family: "Roboto", sans-serif;background: #f9f9f9;}a:link,a:active,a:hover,a:visited {text-decoration: none;}ul {list-style: none;}li::before {content: "•";color: gray;display: inline-block;width: 1em;margin-left: -1em;}
+}/* Hide the browser's default radio button */.check-container input {position: absolute;opacity: 0;cursor: pointer;}/* Create a custom radio button */.checkmark {position: absolute;top: 0;left: 0;height: 16px;width: 16px;background-color: #fff;border-radius: 50%;border: 1px solid #9da2a9;}/* On mouse-over, add a grey background color */.check-container:hover input ~ .checkmark {background-color: #ccc;}/* When the radio button is checked, add a green background */.check-container input:checked ~ .checkmark {background-color: white;border: 1px solid #6dc138;}/* Create the indicator (the dot/circle - hidden when not checked) */.checkmark:after {content: "";position: absolute;display: none;}/* Show the indicator (dot/circle) when checked */.check-container input:checked ~ .checkmark:after {display: block;}/* Style the indicator (dot/circle) */.check-container .checkmark:after {top: 3px;left: 3px;width: 10px;height: 10px;border-radius: 50%;background: #6dc138;}.exclusive {background: #e82e34;color: #fff;font-size: 12px;text-transform: uppercase;letter-spacing: 0.1em;width: 221px;height: 25px;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;position: absolute;top: 0;right: 0;}* {margin: 0;padding: 0;}body {font-family: "Roboto", sans-serif;background: #f9f9f9;}a:link,a:active,a:hover,a:visited {text-decoration: none;}ul {list-style: none;}li::before {content: "•";color: gray;display: inline-block;width: 1em;margin-left: -1em;}@media all and (max-width: 768px) {.menu {width: 100vw;min-width: 320px;}.main__container {width: auto;min-width: 320px;}.tab1__container {-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;-webkit-box-align: center;-ms-flex-align: center;align-items: center;height: auto;}.tab1__title {-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}.tab1__section {-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}.tab1__section-option {margin-bottom: 10px;width: 500px;}.tab2__container {min-width: 320px;padding: 0;}.tab2__options-menu {max-width: 500px;min-width: 320px;}.tab2__section {max-width: 500px;min-width: 320px;}.tab2__option-info {-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}.tab2__option-more {position: relative;}.tab2__option-includes {height: auto;padding-left: 20px;}.includes-list {-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}.list-column {height: auto;}.includes-element {width: auto;}.includes-extra {margin-top: 10px;}}@media all and (max-width: 520px) {.tab1__section-option {margin-bottom: 10px;width: 300px;}.tab2__options-menu {width: 300px;}}
 
 /*# sourceMappingURL=main.css.map */
